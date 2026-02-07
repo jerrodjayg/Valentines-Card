@@ -967,6 +967,38 @@
             background: #ff66cc;
         }
 
+        /* ===== REPLAY BUTTON ===== */
+        .replay-wrap {
+            text-align: center;
+            margin: 200px 0 90px;
+            display: none;
+        }
+
+        .replay-wrap.show {
+            display: block;
+        }
+
+        .replay-btn {
+            font-weight: 800;
+            transition: all 0.1s linear;
+            background-color: transparent;
+            border: solid 2px #ff99dd;
+            border-radius: 4px;
+            color: #ff99dd;
+            display: inline-block;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 10px 16px;
+            line-height: 1em;
+            min-width: 120px;
+            cursor: pointer;
+        }
+
+        .replay-btn:hover {
+            background-color: #ff99dd;
+            color: #fff;
+        }
+
         /* ===== VALENTINE BUTTONS ===== */
         .valentine-buttons {
             position: absolute;
@@ -1042,7 +1074,7 @@
 </head>
 <body>
     <audio id="backgroundMusic" loop>
-        <source src="McHardy.mp3" type="audio/mpeg">
+        <source src="card.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Hello Kitty Character -->
@@ -1133,6 +1165,10 @@
 
     <button class="music-control" id="musicToggle">🎵</button>
 
+    <div class="replay-wrap" id="replayWrap">
+        <button class="replay-btn" id="replayBtn">Replay</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -1140,6 +1176,8 @@
             var envelope = $("#envelope");
             var music = $("#backgroundMusic")[0];
             var musicToggle = $("#musicToggle");
+            var replayWrap = $("#replayWrap");
+            var replayBtn = $("#replayBtn");
             var isPlaying = false;
 
             music.volume = 0.3;
@@ -1173,6 +1211,7 @@
 
             function open() {
                 envelope.addClass("open").removeClass("close");
+                replayWrap.addClass("show");
             }
 
             function close() {
@@ -1180,7 +1219,12 @@
                 // Hide response message when closing
                 $("#responseMsg").hide();
                 $(".valentine-buttons").show();
+                replayWrap.removeClass("show");
             }
+
+            replayBtn.click(function() {
+                close();
+            });
 
             // Valentine button handlers
             $("#yesBtn").click(function() {
