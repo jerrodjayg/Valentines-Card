@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Letter 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== BODY SETUP ===== */
+        body {
+            background-color: #d2b48c;
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            position: relative;
+        }
+
+        /* ===== HELLO KITTY STYLING ===== */
+        #kitty {
+            position: fixed;
+            left: -70px;
+            top: 50%;
+            transform: translateY(-50%) scale(0.7);
+            z-index: 0;
+            opacity: 1.0;
+            width: 500px;
+            height: 550px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        #head {
+            position: absolute;
+            top: 124px;
+            left: 130px;
+            width: 224px;
+            height: 167px;
+            background-color: #FFF;
+            border: 8px solid #000;
+            -moz-border-radius: 160px;
+            -webkit-border-radius: 160px;
+            border-radius: 160px;
+            z-index: 500;
+            -moz-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+            transform: rotate(2deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        #leftear {
+            position: absolute;
+            top: -16px;
+            left: -3px;
+            width: 57px;
+            height: 61px;
+            border: 8px solid #000;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            -moz-border-radius: 20px 37px 20px 44px;
+            -webkit-border-radius: 20px 37px 20px 44px;
+            border-radius: 20px 37px 20px 44px;
+            -moz-transform: rotate(14deg);
+            -ms-transform: rotate(14deg);
+            -o-transform: rotate(14deg);
+            -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+            transform: rotate(14deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        #leftear span {
+            position: absolute;
+            top: 2px;
+            left: -1px;
+            width: 68px;
+            height: 61px;
+            background-color: #FFF;
+            -moz-border-radius: 18px 34px 20px 44px;
+            -webkit-border-radius: 18px 34px 20px 44px;
+            border-radius: 18px 34px 20px 44px;
+        }
+        
+        #rightear {
+            position: absolute;
+            top: -27px;
+            left: 143px;
+            width: 57px;
+            height: 61px;
+            background-color: #FFF;
+            border: 8px solid #000;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            -moz-border-radius: 20px 37px 20px 44px;
+            -webkit-border-radius: 20px 37px 20px 44px;
+            border-radius: 20px 37px 20px 44px;
+            -moz-transform: rotate(80deg);
+            -ms-transform: rotate(80deg);
+            -o-transform: rotate(80deg);
+            -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .lefteye {
+            position: absolute;
+            top: 97px;
+            left: 45px;
+            width: 19px;
+            height: 24px;
+            background-color: #000;
+            -moz-border-radius: 18px;
+            -webkit-border-radius: 18px;
+            border-radius: 18px;
+        }
+        
+        .righteye {
+            position: absolute;
+            top: 93px;
+            left: 162px;
+            width: 19px;
+            height: 24px;
+            background-color: #000;
+            -moz-border-radius: 18px;
+            -webkit-border-radius: 18px;
+            border-radius: 18px;
+        }
+        
+        .nose {
+            position: absolute;
+            top: 115px;
+            left: 100px;
+            width: 16px;
+            height: 9px;
+            background-color: #FFB827;
+            border: 6px solid #000;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            border-radius: 25px;
+        }
+        
+        .leftwhiskers, .rightwhiskers {
+            background-color: #000;
+        }
+        
+        .one {
+            position: absolute;
+            top: 96px;
+            left: -1px;
+            width: 20px;
+            height: 9px;
+            -moz-border-radius: 0 20px 15px 0;
+            -webkit-border-radius: 0 20px 15px 0;
+            border-radius: 0 20px 15px 0;
+            -moz-transform: rotate(6deg);
+            -ms-transform: rotate(6deg);
+            -o-transform: rotate(6deg);
+            -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+        }
+        
+        .one span {
+            display: block;
+            position: absolute;
+            left: -32px;
+            top: 4px;
+            width: 33px;
+            height: 9px;
+            background-color: inherit;
+            -moz-border-radius: 35px 10px 10px;
+            -webkit-border-radius: 35px 10px 10px;
+            border-radius: 35px 10px 10px;
+            -moz-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        
+        .two {
+            position: absolute;
+            top: 120px;
+            left: 6px;
+            width: 15px;
+            height: 8px;
+            -moz-border-radius: 10px 20px 13px 10px;
+            -webkit-border-radius: 10px 20px 13px 10px;
+            border-radius: 10px 20px 13px 10px;
+            -moz-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        
+        .two span {
+            display: block;
+            position: absolute;
+            top: 0px;
+            left: -24px;
+            height: 8px;
+            width: 25px;
+            background-color: inherit;
+            -moz-border-radius: 10px 0 0 15px;
+            -webkit-border-radius: 10px 0 0 15px;
+            border-radius: 10px 0 0 15px;
+            -moz-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+        }
+        
+        .three {
+            position: absolute;
+            top: 138px;
+            left: 20px;
+            width: 15px;
+            height: 8px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -moz-transform: rotate(-16deg);
+            -ms-transform: rotate(-16deg);
+            -o-transform: rotate(-16deg);
+            -webkit-transform: rotate(-16deg);
+            transform: rotate(-16deg);
+        }
+        
+        .three span {
+            display: block;
+            position: absolute;
+            top: 5px;
+            left: -34px;
+            width: 37px;
+            height: 8px;
+            background-color: inherit;
+            -moz-border-radius: 18px 10px 12px;
+            -webkit-border-radius: 18px 10px 12px;
+            border-radius: 18px 10px 12px;
+            -moz-transform: rotate(-19deg);
+            -ms-transform: rotate(-19deg);
+            -o-transform: rotate(-19deg);
+            -webkit-transform: rotate(-19deg);
+            transform: rotate(-19deg);
+        }
+        
+        .four {
+            position: absolute;
+            top: 82px;
+            left: 205px;
+            width: 25px;
+            height: 8px;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-transform: rotate(-13deg);
+            -ms-transform: rotate(-13deg);
+            -o-transform: rotate(-13deg);
+            -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+        }
+        
+        .four span {
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 20px;
+            width: 33px;
+            height: 8px;
+            background-color: inherit;
+            -moz-border-radius: 10px 18px 10px 15px;
+            -webkit-border-radius: 10px 18px 10px 15px;
+            border-radius: 10px 18px 10px 15px;
+            -moz-transform: rotate(13deg);
+            -ms-transform: rotate(13deg);
+            -o-transform: rotate(13deg);
+            -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+        }
+        
+        .five {
+            position: absolute;
+            top: 105px;
+            left: 211px;
+            width: 22px;
+            height: 8px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+        
+        .five span {
+            display: block;
+            position: absolute;
+            top: 2px;
+            left: 16px;
+            width: 25px;
+            height: 8px;
+            background-color: inherit;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -moz-transform: rotate(11deg);
+            -ms-transform: rotate(11deg);
+            -o-transform: rotate(11deg);
+            -webkit-transform: rotate(11deg);
+            transform: rotate(11deg);
+        }
+        
+        .six {
+            position: absolute;
+            top: 129px;
+            left: 200px;
+            width: 22px;
+            height: 8px;
+            -moz-border-radius: 20px 10px 10px 18px;
+            -webkit-border-radius: 20px 10px 10px 18px;
+            border-radius: 20px 10px 10px 18px;
+            -moz-transform: rotate(11deg);
+            -ms-transform: rotate(11deg);
+            -o-transform: rotate(11deg);
+            -webkit-transform: rotate(11deg);
+            transform: rotate(11deg);
+        }
+        
+        .six span {
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 18px;
+            width: 26px;
+            height: 8px;
+            background-color: inherit;
+            -moz-border-radius: 10px 10px 10px 10px;
+            -webkit-border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 10px 10px;
+            -moz-transform: rotate(13deg);
+            -ms-transform: rotate(13deg);
+            -o-transform: rotate(13deg);
+            -webkit-transform: rotate(13deg);
+            transform: rotate(13deg);
+        }
+        
+        #bow {
+            position: absolute;
+            top: 134px;
+            left: 141px;
+            z-index: 1000;
+        }
+        
+        .center {
+            position: absolute;
+            left: 140px;
+            width: 32px;
+            height: 35px;
+            background-color: #F51F27;
+            border: 8px solid #000;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+            z-index: 2;
+            -moz-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+            -o-transform: rotate(20deg);
+            -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+        }
+        
+        .left {
+            position: absolute;
+            top: -33px;
+            left: 99px;
+            width: 46px;
+            height: 62px;
+            background-color: #F51F27;
+            border: 8px solid #000;
+            -moz-border-radius: 50px 50px 55px 46px;
+            -webkit-border-radius: 50px 50px 55px 46px;
+            border-radius: 50px 50px 55px 46px;
+            -moz-transform: rotate(19deg);
+            -ms-transform: rotate(19deg);
+            -o-transform: rotate(19deg);
+            -webkit-transform: rotate(19deg);
+            transform: rotate(19deg);
+        }
+        
+        .left span {
+            position: absolute;
+            top: 20px;
+            left: 23px;
+            width: 15px;
+            height: 15px;
+            border: 6px solid #000;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+        }
+        
+        .right {
+            position: absolute;
+            top: 0;
+            left: 164px;
+            width: 43px;
+            height: 54px;
+            background-color: #F51F27;
+            border: 8px solid #000;
+            -moz-border-radius: 78px 48px 60px 63px;
+            -webkit-border-radius: 78px 48px 60px 63px;
+            border-radius: 78px 48px 60px 63px;
+            -moz-transform: rotate(22deg);
+            -ms-transform: rotate(22deg);
+            -o-transform: rotate(22deg);
+            -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+        }
+        
+        .right span {
+            position: absolute;
+            top: 18px;
+            left: 1px;
+            width: 15px;
+            height: 12px;
+            border: 6px solid #000;
+            -moz-border-radius: 30px;
+            -webkit-border-radius: 30px;
+            border-radius: 30px;
+        }
+        
+        #body {
+            position: absolute;
+            top: 295px;
+            width: 250px;
+            height: 150px;
+        }
+        
+        #leftarm {
+            position: absolute;
+            top: -8px;
+            left: 142px;
+            width: 40px;
+            height: 73px;
+            background-color: #FFF;
+            border: 8px solid #000;
+            -moz-border-radius: 158px 0 82px 100px;
+            -webkit-border-radius: 158px 0 82px 100px;
+            border-radius: 158px 0 82px 100px;
+            overflow: hidden;
+            -moz-transform: rotate(28deg);
+            -ms-transform: rotate(28deg);
+            -o-transform: rotate(28deg);
+            -webkit-transform: rotate(28deg);
+            transform: rotate(28deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        #leftarm span {
+            position: absolute;
+            top: -3px;
+            left: 1px;
+            width: 50px;
+            height: 38px;
+            background-color: pink;
+            border-bottom: 8px solid #000;
+            -webkit-border-top-left-radius: 200px;
+            -moz-border-radius-topleft: 200px;
+            border-top-left-radius: 200px;
+            -moz-transform: rotate(6deg);
+            -ms-transform: rotate(6deg);
+            -o-transform: rotate(6deg);
+            -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+        }
+        
+        #rightarm {
+            position: absolute;
+            top: -4px;
+            left: 302px;
+            height: 70px;
+            width: 40px;
+            background-color: #FFF;
+            border: 8px solid #000;
+            -moz-border-radius: 0 158px 100px 81px;
+            -webkit-border-radius: 0 158px 100px 81px;
+            border-radius: 0 158px 100px 81px;
+            overflow: hidden;
+            -moz-transform: rotate(-28deg);
+            -ms-transform: rotate(-28deg);
+            -o-transform: rotate(-28deg);
+            -webkit-transform: rotate(-28deg);
+            transform: rotate(-28deg);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        #rightarm span {
+            position: absolute;
+            top: -2px;
+            left: -4px;
+            width: 41px;
+            height: 36px;
+            background-color: pink;
+            border-bottom: 8px solid #000;
+            -webkit-border-top-right-radius: 200px;
+            -moz-border-radius-topright: 200px;
+            border-top-right-radius: 200px;
+            -moz-transform: rotate(-9deg);
+            -ms-transform: rotate(-9deg);
+            -o-transform: rotate(-9deg);
+            -webkit-transform: rotate(-9deg);
+            transform: rotate(-9deg);
+        }
+        
+        #chest {
+            position: absolute;
+            top: -32px;
+            left: 213px;
+            width: 58px;
+            height: 54px;
+            background-color: pink;
+            border: 8px solid #000;
+            -moz-border-radius: 60px;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+        }
+        
+        #torso {
+            position: absolute;
+            top: -10px;
+            left: 165px;
+            width: 154px;
+            height: 105px;
+            background-color: #F51F27;
+            border: 8px solid #000;
+            -moz-border-radius: 110px 110px 0 0;
+            -webkit-border-radius: 110px 110px 0 0;
+            border-radius: 110px 110px 0 0;
+            border-bottom: none;
+        }
+        
+        #torso .leftshort {
+            display: block;
+            position: absolute;
+            top: 92px;
+            left: -8px;
+            width: 73px;
+            height: 14px;
+            background-color: #F51F27;
+            border-bottom: 8px solid #000;
+            border-left: 8px solid #000;
+            -moz-border-radius: 1px 3px 0 30px;
+            -webkit-border-radius: 1px 3px 0 30px;
+            border-radius: 1px 3px 0 30px;
+            z-index: 3;
+            -moz-transform: rotate(2deg);
+            -ms-transform: rotate(2deg);
+            -o-transform: rotate(2deg);
+            -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+        }
+        
+        #torso .rightshort {
+            display: block;
+            position: absolute;
+            top: 97px;
+            right: -8px;
+            width: 73px;
+            height: 8px;
+            background-color: #F51F27;
+            border-bottom: 8px solid #000;
+            border-right: 8px solid #000;
+            -moz-border-radius: 3px 1px 30px 0;
+            -webkit-border-radius: 3px 1px 30px 0;
+            border-radius: 3px 1px 30px 0;
+            z-index: 3;
+            -moz-transform: rotate(-2deg);
+            -ms-transform: rotate(-2deg);
+            -o-transform: rotate(-2deg);
+            -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+        }
+        
+        .crotch {
+            position: absolute;
+            bottom: -6px;
+            left: 71px;
+            width: 12px;
+            height: 12px;
+            background-color: #000;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+        
+        #leftleg {
+            position: absolute;
+            top: 100px;
+            left: 165px;
+            width: 73px;
+            height: 34px;
+            background-color: #FFF;
+            border: 8px solid #000;
+            -moz-border-radius: 0 15px 25px 35px;
+            -webkit-border-radius: 0 15px 25px 35px;
+            border-radius: 0 15px 25px 35px;
+        }
+        
+        #rightleg {
+            position: absolute;
+            top: 100px;
+            left: 246px;
+            width: 73px;
+            height: 34px;
+            background-color: #fff;
+            border: 8px solid #000;
+            -moz-border-radius: 15px 0 35px 25px;
+            -webkit-border-radius: 15px 0 35px 25px;
+            border-radius: 15px 0 35px 25px;
+        }
+
+        /* ===== ENVELOPE WRAPPER ===== */
+        .envelope-wrapper {
+            height: 500px;
+            padding-top: 80px;
+        }
+
+        /* ===== THE ENVELOPE ===== */
+        #envelope {
+            position: relative;
+            width: 400px;
+            height: 260px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #f0e6d2;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        #envelope.open {
+            background-color: transparent;
+            box-shadow: none;
+            transition: background-color 0.4s 2s ease, box-shadow 0.4s 2s ease;
+        }
+
+        /* ===== FRONT PARTS ===== */
+        .front {
+            position: absolute;
+            width: 0;
+            height: 0;
+            z-index: 3;
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        .open .front {
+            opacity: 0;
+            transition: opacity 0.4s 2s ease;
+        }
+
+        /* THE FLAP */
+        .flap {
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+            border-bottom: 120px solid transparent;
+            border-top: 140px solid #e8d5b7;
+            transform-origin: top;
+            pointer-events: none;
+        }
+
+        /* THE POCKET */
+        .pocket {
+            border-left: 200px solid #f5deb3;
+            border-right: 200px solid #f5deb3;
+            border-bottom: 130px solid #f0e6d2;
+            border-top: 130px solid transparent;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+
+        /* ===== THE LETTER INSIDE ===== */
+        .letter {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transform-origin: top center;
+            background: 
+                repeating-linear-gradient(
+                    transparent,
+                    transparent 29px,
+                    #e8e8e8 29px,
+                    #e8e8e8 30px
+                ),
+                linear-gradient(
+                    to right,
+                    transparent 35px,
+                    #ffcccb 35px,
+                    #ffcccb 37px,
+                    transparent 37px
+                ),
+                #fffef7;
+            width: 320px;
+            height: 200px;
+            border-radius: 6px;
+            box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
+            font-family: "Dancing Script", cursive;
+            padding: 15px 15px 15px 45px;
+            box-sizing: border-box;
+            z-index: 2;
+            transition: all 0.4s ease;
+        }
+
+        /* Notepad holes */
+        .letter:before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ddd;
+            box-shadow: 
+                0 25px 0 #ddd,
+                0 50px 0 #ddd,
+                0 75px 0 #ddd,
+                0 100px 0 #ddd;
+        }
+
+        /* ===== TEXT ON THE LETTER ===== */
+        .words {
+            position: absolute;
+            left: 10%;
+            width: 80%;
+            color: #333;
+            transition: all 0.6s ease;
+        }
+
+        .words.line1 {
+            top: 8%;
+            font-size: 0.8rem;
+            width: 30%;
+        }
+
+        .open .words.line1 {
+            font-size: 1.4rem;
+            top: 5%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line2 {
+            top: 20%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .open .words.line2 {
+            font-size: 1.4rem;
+            top: 15%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line3 {
+            top: 33%;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .open .words.line3 {
+            font-size: 1.4rem;
+            top: 27%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line4 {
+            top: 46%;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .open .words.line4 {
+            font-size: 1.4rem;
+            top: 39%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line5 {
+            top: 59%;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .open .words.line5 {
+            font-size: 1.3rem;
+            top: 51%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line6 {
+            top: 71%;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+
+        .open .words.line6 {
+            font-size: 1.3rem;
+            top: 62%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        .words.line7 {
+            top: 83%;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        .open .words.line7 {
+            font-size: 1.5rem;
+            top: 73%;
+            transition: font-size 0.4s 3.1s ease, top 0.4s 3.1s ease;
+        }
+
+        /* ===== ANIMATION STATES ===== */
+        
+        /* WHEN ENVELOPE OPENS */
+        .open .flap {
+            transform: rotateX(180deg);
+            transition: transform 0.4s ease;
+            z-index: 1;
+        }
+
+        .open .letter {
+            transform: translateX(-50%) translateY(-180px);
+            width: 700px;
+            height: 550px;
+            transition: transform 0.4s 0.6s ease, width 0.6s 2.5s ease, height 0.6s 2.5s ease;
+        }
+
+        /* WHEN ENVELOPE CLOSES */
+        .close .flap {
+            transform: rotateX(0deg);
+            transition: transform 0.4s 0.6s ease;
+            z-index: 5;
+        }
+
+        .close .letter {
+            transform: translateX(-50%) translateY(-50%);
+            width: 320px;
+            height: 200px;
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+
+        /* ===== FLOATING HEARTS ===== */
+        .hearts {
+            position: absolute;
+            top: 90px;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+
+        .heart:before,
+        .heart:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #ff99dd;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart:after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        .close .heart {
+            opacity: 0;
+            animation: none;
+        }
+
+        .a1 {
+            left: 20%;
+            transform: scale(0.6);
+            opacity: 1;
+            animation: slideUp 4s linear 1, sideSway 2s ease-in-out 4 alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0.7s;
+        }
+
+        .a2 {
+            left: 55%;
+            transform: scale(1);
+            opacity: 1;
+            animation: slideUp 5s linear 1, sideSway 4s ease-in-out 2 alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0.7s;
+        }
+
+        .a3 {
+            left: 10%;
+            transform: scale(0.8);
+            opacity: 1;
+            animation: slideUp 7s linear 1, sideSway 2s ease-in-out 6 alternate;
+            animation-fill-mode: forwards;
+            animation-delay: 0.7s;
+        }
+
+        @keyframes slideUp {
+            0% { top: 0; }
+            100% { top: -600px; }
+        }
+
+        @keyframes sideSway {
+            0% { margin-left: 0px; }
+            100% { margin-left: 50px; }
+        }
+
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ff99dd;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 153, 221, 0.4);
+            z-index: 1000;
+            transition: all 0.3s;
+        }
+
+        .music-control:hover {
+            transform: scale(1.1);
+            background: #ff66cc;
+        }
+
+        /* ===== VALENTINE BUTTONS ===== */
+        .valentine-buttons {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+            gap: 20px;
+            z-index: 10;
+        }
+
+        .open .valentine-buttons {
+            display: flex;
+            animation: fadeIn 0.5s ease 3.5s forwards;
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        .valentine-btn {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 15px 40px;
+            border: 3px solid #000;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .valentine-btn.yes {
+            background: #ff99dd;
+            color: #fff;
+        }
+
+        .valentine-btn.yes:hover {
+            background: #ff66cc;
+            transform: scale(1.1);
+        }
+
+        .valentine-btn.no {
+            background: #fff;
+            color: #333;
+        }
+
+        .valentine-btn.no:hover {
+            background: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        /* Response message */
+        .response-message {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: "Dancing Script", cursive;
+            font-size: 2rem;
+            color: #ff99dd;
+            text-align: center;
+            display: none;
+            animation: heartBeat 1s ease infinite;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="McHardy.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hello Kitty Character -->
+    <div id="kitty">
+        <div id="head">
+            <div id="leftear">
+                <span></span>
+            </div>
+            <div id="rightear"></div>
+            <div id="face">
+                <div class="lefteye"></div>
+                <div class="righteye"></div>
+                <div class="nose"></div>
+            </div>
+            
+            <div class="leftwhiskers one">
+                <span></span>
+            </div>
+            <div class="leftwhiskers two">
+                <span></span>
+            </div>
+            <div class="leftwhiskers three">
+                <span></span>
+            </div>
+            
+            <div class="rightwhiskers four">
+                <span></span>
+            </div>
+            <div class="rightwhiskers five">
+                <span></span>
+            </div>
+            <div class="rightwhiskers six">
+                <span></span>
+            </div>
+        </div>
+        
+        <div id="bow">
+            <div class="left"><span></span></div>
+            <div class="center"></div>
+            <div class="right"><span></span></div>
+        </div>
+        
+        <div id="body">
+            <div id="leftarm"><span></span></div>
+            <div id="rightarm"><span></span></div>
+            <div id="torso">
+                <span class="leftshort"></span>
+                <span class="rightshort"></span>
+                <div class="crotch"></div>
+            </div>
+            <div id="chest"></div>
+            <div id="leftleg"></div>
+            <div id="rightleg"></div>
+        </div>
+    </div>
+
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            
+            <div class="letter">
+                <div class="words line1">To: My Wifatu</div>
+                <div class="words line2">I love to love you my Solomon 4:7 wife</div>
+                <div class="words line3">I pray our relationship will continue</div>
+                <div class="words line4">to be full of love and happiness</div>
+                <div class="words line5">I cant wait to enjoy our first Valentines Day together</div>
+                <div class="words line6">and I pray for many more my princess</div>
+                <div class="words line7">Will you be my valentine?</div>
+            
+                <!-- Valentine Yes/No Buttons -->
+                <div class="valentine-buttons">
+                    <button class="valentine-btn yes" id="yesBtn">Yes! 💕</button>
+                    <button class="valentine-btn no" id="noBtn">No</button>
+                </div>
+                
+                <!-- Response Message -->
+                <div class="response-message" id="responseMsg"></div>
+            </div>
+            
+            <div class="hearts">
+                <div class="heart a1"></div>
+                <div class="heart a2"></div>
+                <div class="heart a3"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="music-control" id="musicToggle">🎵</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var envelope = $("#envelope");
+            var music = $("#backgroundMusic")[0];
+            var musicToggle = $("#musicToggle");
+            var isPlaying = false;
+
+            music.volume = 0.3;
+
+            musicToggle.click(function() {
+                if (isPlaying) {
+                    music.pause();
+                    musicToggle.text("🎵");
+                    isPlaying = false;
+                } else {
+                    music.play().then(function() {
+                        musicToggle.text("🔇");
+                        isPlaying = true;
+                    }).catch(function(error) {
+                        alert("Music file not found! Make sure McHardy.mp3 is in the same folder as Card.html");
+                        console.log("Error playing music:", error);
+                    });
+                }
+            });
+
+            envelope.click(function() {
+                if (!isPlaying) {
+                    music.play().catch(function(error) {
+                        console.log("Could not auto-play music:", error);
+                    });
+                    musicToggle.text("🔇");
+                    isPlaying = true;
+                }
+                open();
+            });
+
+            function open() {
+                envelope.addClass("open").removeClass("close");
+            }
+
+            function close() {
+                envelope.addClass("close").removeClass("open");
+                // Hide response message when closing
+                $("#responseMsg").hide();
+                $(".valentine-buttons").show();
+            }
+
+            // Valentine button handlers
+            $("#yesBtn").click(function() {
+                $(".valentine-buttons").hide();
+                $("#responseMsg").text("I love you so much!💕").show();
+                
+                // Trigger pink and red confetti from both sides!
+                var end = Date.now() + (15 * 1000);
+                var colors = ['#ff99dd', '#F51F27']; // Pink and red
+                
+                (function frame() {
+                    confetti({
+                        particleCount: 2,
+                        angle: 60,
+                        spread: 55,
+                        origin: { x: 0 },
+                        colors: colors
+                    });
+                    confetti({
+                        particleCount: 2,
+                        angle: 120,
+                        spread: 55,
+                        origin: { x: 1 },
+                        colors: colors
+                    });
+                    if (Date.now() < end) {
+                        requestAnimationFrame(frame);
+                    }
+                }());
+            });
+
+            $("#noBtn").click(function() {
+                $(".valentine-buttons").hide();
+                $("#responseMsg").text("😢 Are you sure...?").show();
+                
+                // After 2 seconds, show buttons again with a fun twist
+                setTimeout(function() {
+                    $("#responseMsg").text("Please...? 🥺").show();
+                    $(".valentine-buttons").show();
+                    // Make the "No" button harder to click
+                    $("#noBtn").text("Maybe?");
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
+
